@@ -1,0 +1,35 @@
+.movieCard{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.movieCard:hover {
+    transform: translateY(-30px);
+    transition: 0.5s;
+    .movieImage{
+        box-shadow: 10px 10px 10px 10px rgba(5, 198, 83, 0.548);  
+    }
+    .nombreP{
+        color: #05c653;
+    }
+
+}
+
+.movieImage{
+    border-radius: 10px;
+}
+
+@media(max-width: 560px) {
+    .movieImage{
+        width: 90%;
+        height: auto;
+    }
+}
+
+.nombrePeli{
+    text-decoration: none;
+    color: antiquewhite;
+    
+}
