@@ -11,7 +11,7 @@ export function MovieDetails(){
     const [generos, setGeneros] = useState([]);
 
     useEffect(() => {
-        get("/movie/" + movieId).then((data) => {
+        get("/movie/" + movieId + "?language=es-MX").then((data) => {
             setMovie(data);
             setGeneros(data.genres)
             console.log(data);
@@ -45,7 +45,6 @@ export function MovieDetails(){
                     {movie.overview}
                 </p>
             </div>
-
         </div>
     );
 }

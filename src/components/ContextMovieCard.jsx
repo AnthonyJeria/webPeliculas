@@ -8,7 +8,7 @@ export function ContextMovieCard() {
     const [movies, SetMovies] = useState([]);
 
     useEffect(() => {
-        get("/discover/movie").then((data) => {
+        get("/discover/movie?language=es-MX").then((data) => {
             SetMovies(data.results);
             console.log(data);
             
