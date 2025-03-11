@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MyRoutes } from './routers/routes'
 import { MenuArriba } from './components/MenuArriba'
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <div>
       <MenuArriba/>
       <MyRoutes/>
+      <Footer/>
     </div>
   )
 }
