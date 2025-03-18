@@ -12,3 +12,23 @@
         grid-template-columns: 100%;
     }
 }
+
+.botones {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.boton{
+    background-color: #01702d;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: white;
+    color: #01702d;
+}

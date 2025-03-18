@@ -16,7 +16,6 @@ export function MovieDetails(){
             setGeneros(data.genres)
             console.log(data);
             
-            
         });
     }, [movieId]);
     
@@ -27,21 +26,20 @@ export function MovieDetails(){
             <img className="col movieImage" src={imageUrl} alt={movie.title}/>
             
             <div className="col movieDetails">
-                <p className="title">
-                    <strong>Titulo: </strong>
+                <h2 className="title">
                     {movie.title}
-                </p>
+                </h2>
+                <p className="original_title">{movie.original_title} {movie.release_date}</p>
 
 
-                <p><strong>Generos:</strong></p>
+
                 <ul className="listaGeneros">
                     {generos.map((genero)=>(
-                        <p key={genero.id}>{genero.name} </p>
+                        <p key={genero.id} className="genero">{genero.name} </p>
                     ))}
                 </ul>
 
                 <p>
-                    <strong>Descripcion: </strong>
                     {movie.overview}
                 </p>
             </div>
