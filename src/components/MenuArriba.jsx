@@ -15,9 +15,9 @@ export function MenuArriba(){
             </div>
 
             <ul id='nav-links'>
+              <li ><input className='buscador' type="search" placeholder='Buscar Pelicula'/></li>
               <li className='elemento'><a href="/" className='links'>Inicio</a></li>
               <li className='elemento'><a href="#" className='links'>Películas</a></li>
-              <li className='elemento'><a href="#" className='links'>Series</a></li>
               <li className='elemento'><a href="#" className='links'>Actores</a></li>
               <li className='elemento'><a href="#" className='links'>Otros</a></li>
             </ul>

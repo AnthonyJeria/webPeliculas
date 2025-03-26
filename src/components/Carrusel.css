@@ -1,0 +1,60 @@
+.cuerpoC {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 90vh;
+    padding: 0 50px;
+}
+
+*::-webkit-scrollbar{
+    width: 0;
+}
+
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carrusel_viewport, .carrusel_slide{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    perspective: 100px;
+    overflow: hidden;
+}
+
+.carrusel_viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel_slide {
+    flex: 0 0 20%;
+    counter-increment: item;
+    width: 33.33%;
+    counter-increment: item;
+}
+
+.portada{
+    border-radius: 20px;
+}
+
+@media(max-width: 700px) {
+    .cuerpoC {
+        display: none;
+    }
+}

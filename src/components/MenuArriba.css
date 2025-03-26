@@ -149,3 +149,10 @@
     display: flex;
   }
 }
+
+.buscador{
+  border-radius: 7px;
+  border: none;
+  width: 200px;
+  height: 25px;
+}

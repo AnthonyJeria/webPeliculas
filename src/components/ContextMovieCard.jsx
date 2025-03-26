@@ -21,6 +21,7 @@ export function ContextMovieCard() {
 
     return(
         <div>
+            <h1 className="encabezado">Películas Populares</h1>
             <ul className="container">
                 {movies.map((movie)=>(
                     <MovieCard key={movie.id} movie={movie}/>
