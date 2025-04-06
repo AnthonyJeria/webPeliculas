@@ -21,7 +21,7 @@ export function Carrusel() {
             <section className="carrusel">
                 <ol className="carrusel_viewport">
                     {movies.map((movie)=>(
-                        <li className="carrusel_slide">
+                        <li className="carrusel_slide" key={movie.id}>
                             <Link className="nombrePeli" to={"/movies/"+movie.id}>
                                 <img className="portada" width={230} height={345} src={imageUrl+movie.poster_path} alt={movie.title} />
                                 <p>{movie.title}</p>
