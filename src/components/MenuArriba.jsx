@@ -40,7 +40,6 @@ export function MenuArriba(){
               </li>
               <li className='elemento'><a href="/" className='links'>Inicio</a></li>
               <li className='elemento'><a href="/Bibloteca/1" className='links'>Bibloteca</a></li>
-              <li className='elemento'><a href="#" className='links'>Actores</a></li>
               <li className='elemento'><a href="#" className='links'>Otros</a></li>
             </ul>
           </nav>

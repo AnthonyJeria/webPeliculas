@@ -42,3 +42,11 @@
     font-size: 1.5rem;
     color: dimgray;
 }
+
+.listavideos{
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    flex: 1;
+}
