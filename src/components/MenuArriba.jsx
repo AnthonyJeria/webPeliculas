@@ -40,7 +40,7 @@ export function MenuArriba(){
               </li>
               <li className='elemento'><a href="/" className='links'>Inicio</a></li>
               <li className='elemento'><a href="/Bibloteca/1" className='links'>Bibloteca</a></li>
-              <li className='elemento'><a href="#" className='links'>Otros</a></li>
+              <li className='elemento'><a href="/Otros" className='links'>Otros</a></li>
             </ul>
           </nav>
         </nav>
@@ -53,7 +53,7 @@ export function MenuArriba(){
                   <button className='boton'>buscar</button>
             </form>
           </div>
-          <a className='item' href="#">Otros</a>
+          <a className='item' href="/Otros">Otros</a>
           <div className='underline'></div>
         </nav>
 
