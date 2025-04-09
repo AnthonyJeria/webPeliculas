@@ -34,7 +34,7 @@ export function MenuArriba(){
 
                 <form onSubmit={buscar}>
                   <input className='buscador' value={valorInput} onChange={manejarCambio} type="search" placeholder='Buscar Pelicula'/>
-                  <button>buscar</button>
+                  <button className='boton'>buscar</button>
                 </form>
                 
               </li>
@@ -46,17 +46,12 @@ export function MenuArriba(){
         </nav>
         
         <nav className='secondMenu'>
-          <a className='item' href="#">Inicio</a>
-          <a className='item' href="#">Bibloteca</a>
+          <a className='item' href="/">Inicio</a>
           <div className='item'>
-            Cartelera
-            <div className='dropdown'>
-              <div>
-                <a href="#">Películas</a>
-                <a href="#">Series</a>
-                <a href="#">Actores</a>
-              </div>
-            </div>
+            <form onSubmit={buscar}>
+                  <input className='buscador_pequeno' value={valorInput} onChange={manejarCambio} type="search" placeholder='Buscar Pelicula'/>
+                  <button className='boton'>buscar</button>
+            </form>
           </div>
           <a className='item' href="#">Otros</a>
           <div className='underline'></div>

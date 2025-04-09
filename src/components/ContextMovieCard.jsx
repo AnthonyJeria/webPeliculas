@@ -4,6 +4,7 @@ import { get } from "../data/httpClient"
 import { MovieCard } from "../components/MovieCard"
 import "../components/ContextMovieCard.css"
 import { Link } from "react-router-dom";
+import { Carrusel } from "../components/Carrusel"
 
 export function ContextMovieCard() {
     const [movies, SetMovies] = useState([]);
@@ -18,6 +19,11 @@ export function ContextMovieCard() {
 
     return(
         <div>
+            <div class="slogan-section">
+                <h1>Movie Play</h1>
+                <p>Miles de películas  a un play</p>
+            </div>
+            <Carrusel/>
             <h1 className="encabezado">Películas Populares</h1>
             <ul className="container">
                 {movies.map((movie)=>(

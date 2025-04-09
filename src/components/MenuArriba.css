@@ -67,10 +67,9 @@
   font-size: 0.8rem;
   display: inline-block;
   position: relative;
-  padding: 0 20px;
+  padding: 0 10px;
   cursor: pointer;
   z-index: 5;
-  min-width: 25%;
   height: 60px;
   line-height: 60px;
   text-align: center;
@@ -109,17 +108,6 @@
   background: #05c653;
 }
 
-.underline {
-  height: 6px;
-  background: #05c653;
-  position: absolute;
-  bottom: 0;
-  width: 25%;
-  z-index: 2;
-  pointer-events: none;
-  transition: 0.35s;
-}
-
 .secondMenu .item:hover > .dropdown > div {
   translate: 0;
 }
@@ -151,6 +139,13 @@
 }
 
 .buscador{
+  border-radius: 7px;
+  border: none;
+  width: 200px;
+  height: 25px;
+}
+
+.buscador_pequeno{
   border-radius: 7px;
   border: none;
   width: 200px;
