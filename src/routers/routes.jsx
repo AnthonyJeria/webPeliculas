@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Routes, Route,} from "react-router-dom"
 import { LandingPage } from "../pages/LandingPage"
 import { MovieDetails } from "../pages/movieDetails"
 import { Bibloteca } from "../pages/Bibloteca"
-import { Otros } from "../pages/otros"
+import { Otros } from "../pages/Otros"
 
 export function MyRoutes(){
     return(<Router>
