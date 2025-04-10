@@ -2,6 +2,7 @@ import '../components/MenuArriba.css'
 import logo from '../img/logo.png'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 export function MenuArriba(){
   const [valorInput, setValorInput] = useState('');
@@ -38,9 +39,9 @@ export function MenuArriba(){
                 </form>
                 
               </li>
-              <li className='elemento'><a href="/" className='links'>Inicio</a></li>
-              <li className='elemento'><a href="/Bibloteca/1" className='links'>Bibloteca</a></li>
-              <li className='elemento'><a href="/Otros" className='links'>Otros</a></li>
+              <li className='elemento'><Link className='links' to={"/"}>Inicio</Link></li>
+              <li className='elemento'><Link className='links' to={"/Bibloteca/1"}>Bibloteca</Link></li>
+              <li className='elemento'><Link className='links' to={"/Otros"}>Otros</Link></li>
             </ul>
           </nav>
         </nav>
