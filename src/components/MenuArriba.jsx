@@ -20,8 +20,12 @@ export function MenuArriba(){
     setValorInput(e.target.value);
   };
 
-  const buscar = (e) =>{
+  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+  const buscar = async  (e) =>{
     e.preventDefault();
+    navigate("/");
+    await sleep(1);
     navigate("/bibloteca/"+movieName);
   }
 
