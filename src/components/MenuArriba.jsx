@@ -20,7 +20,8 @@ export function MenuArriba(){
     setValorInput(e.target.value);
   };
 
-  const buscar = () =>{
+  const buscar = (e) =>{
+    e.preventDefault();
     navigate("/bibloteca/"+movieName);
   }
 
@@ -47,14 +48,14 @@ export function MenuArriba(){
         </nav>
         
         <nav className='secondMenu'>
-          <a className='item' href="/">Inicio</a>
+        <Link className='item' to={"/"}>Inicio</Link>
           <div className='item'>
             <form onSubmit={buscar}>
                   <input className='buscador_pequeno' value={valorInput} onChange={manejarCambio} type="search" placeholder='Buscar Pelicula'/>
                   <button className='boton'>buscar</button>
             </form>
           </div>
-          <a className='item' href="/Otros">Otros</a>
+          <Link className='item' to={"/Otros"}>Otros</Link>
           <div className='underline'></div>
         </nav>
 
