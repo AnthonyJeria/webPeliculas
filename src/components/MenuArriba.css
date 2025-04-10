@@ -61,6 +61,8 @@
   display: none;
   padding: 0;
   width: 100%;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .secondMenu .item {
@@ -148,6 +150,6 @@
 .buscador_pequeno{
   border-radius: 7px;
   border: none;
-  width: 200px;
+  width: 100px;
   height: 25px;
 }

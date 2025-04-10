@@ -59,9 +59,10 @@ export function MovieDetails(){
                     
                 </div>
             </div>
+            <h1 className="secTitulo">Trailers:</h1>
             <ul className="listavideos">
                 {videos.map((video)=>(
-                    <iframe key={video.id} className="video" width="560" height="315" src={"https://www.youtube.com/embed/"+video.key}></iframe>
+                    <iframe key={video.id} className="video"src={"https://www.youtube.com/embed/"+video.key}></iframe>
                 ))}
             </ul>
             <Footer/>

@@ -26,9 +26,10 @@
 
 .listaGeneros{
     display: flex;
+    grid-template-columns: repeat(auto-fill, 230px);
+    justify-content: center;
+    flex: 1;
 }
-
-
 
 .genero {
     background-color: #01702d;
@@ -49,4 +50,15 @@
     padding: 40px;
     justify-content: center;
     flex: 1;
+}
+
+.secTitulo{
+    text-align: center;
+}
+
+@media(min-width: 700px) {
+    .video {
+        width: 560px;
+        height: 315px;
+      }
 }
