@@ -17,6 +17,15 @@ export function ContextMovieCard() {
         });
     }, []);
 
+    window.onscroll = () => {
+        const btn = document.getElementById("scrollTopBtn");
+        btn.style.display = (window.scrollY > 300) ? "block" : "none";
+      };
+    
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
     return(
         <div>
             <div class="slogan-section">
@@ -32,7 +41,7 @@ export function ContextMovieCard() {
                 ))}
             </ul>
             <div className="botones">
-                <Link to={"/Bibloteca/1"}><button className="boton" >Ver mas Peliculas</button></Link>
+                <Link to={"/Bibloteca/1"}><button className="boton" onClick={scrollToTop()} >Ver mas Peliculas</button></Link>
             </div>
             
         </div>

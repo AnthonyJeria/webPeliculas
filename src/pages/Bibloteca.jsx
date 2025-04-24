@@ -35,6 +35,15 @@ export function Bibloteca(){
 
     }
 
+    window.onscroll = () => {
+        const btn = document.getElementById("scrollTopBtn");
+        btn.style.display = (window.scrollY > 300) ? "block" : "none";
+      };
+    
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
     return(
         <div>
             <MenuArriba/>
@@ -46,8 +55,8 @@ export function Bibloteca(){
                     ))}
                 </ul>
                 <div className="botones">
-                    <button className="boton" onClick={() => setPage((prev) => Math.max(prev - 1, 1))} disabled={page === 1}>Anterior</button>
-                    <button className="boton" onClick={() => setPage((prev) => prev + 1)}>Siguiente</button>
+                    <button className="boton" onClick={() => setPage((prev) => Math.max(prev - 1, 1)) & scrollToTop()} disabled={page === 1}>Anterior</button>
+                    <button className="boton" onClick={() => setPage((prev) => prev + 1) & scrollToTop()}>Siguiente</button>
                 </div>
                 
                 {loading && <p>Cargando...</p>}
